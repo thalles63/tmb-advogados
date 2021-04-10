@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TMB Advogados</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <link href="hamburgers.min.css" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <a href="index.html" class="logo">TMB <span>Advogados</span></a>
+      <div class="menu-toggle">
+         <button class="hamburger hamburger--spin custom-hamburguer" type="button" onclick="toggleMenu()">
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+            </span>
+         </button>
+      </div>
+      <ul class="navigation">
+         <li><a href="#banner" onclick="toggleMenu()">Inicial</a></li>
+         <li><a href="#quemsomos" onclick="toggleMenu()">Quem somos</a></li>
+         <li><a href="#areas" onclick="toggleMenu()">Áreas de Atuação</a></li>
+         <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+      </ul>
+   </header>
+   <section class="banner" id="banner">
+      <div class="content">
+         <h2>TMB Advogados</h2>
+         <p>Advocacia e consultoria</p>
+         <a href="#quemsomos" class="btn">Saiba mais</a>
+      </div>
+   </section>
+
+   <section class="quemsomos" id="quemsomos">
+      <div class="title">
+         <h2 class="title-text">Quem somos</h2>
+         <p>Conheça um pouco mais sobre os profissionais que atuam na TMB Advogados.</p>
+      </div>
+      <div class="content">
+         <div class="box">
+            <div class="img-box">
+               <img src="images/thays.jpg">
+            </div>
+            <div class="text">
+               <h3>Thays Maineri Paim Machado</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/mateus.jpg">
+            </div>
+            <div class="text">
+               <h3>Mateus Boeira</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/juliana.jpg">
+            </div>
+            <div class="text">
+               <h3>Juliana Deboni Telles</h3>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="areas" id="areas">
+      <div class="title">
+         <h2 class="title-text">Áreas de Atuação</h2>
+         <p>msuidfn dfsuin fuids nuif nsdui nuid nsiu fndsuin uids nui dnsuinfsdi niu nsuidn</p>
+      </div>
+      <div class="content">
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area1.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito contratual</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area2.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito empresarial</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area3.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito de família e sucessório</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area4.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito agrário</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area5.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito do consumidor</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area6.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito do trabalho</h3>
+            </div>
+         </div>
+         <div class="box">
+            <div class="img-box">
+               <img src="images/area7.jpg">
+            </div>
+            <div class="text">
+               <h3>Cobrança judicial e extrajudicial</h3>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="contato" id="contato">
+      <div class="title">
+         <h2 class="title-text">Contato</h2>
+         <p>Entre em contato através do formulário ou um de nossos canais.</p>
+      </div>
+      <div class="contact-form">
+         <h3>Envie-nos uma mensagem</h3>
+         <div class="input-box">
+            <input type="text" placeholder="Nome">
+         </div>
+         <div class="input-box">
+            <input type="text" placeholder="Email">
+         </div>
+         <div class="input-box">
+            <input type="text" placeholder="Telefone">
+         </div>
+         <div class="input-box">
+            <textarea placeholder="Mensagem"></textarea>
+         </div>
+         <div class="input-box">
+            <input type="submit" value="Enviar">
+         </div>
+      </div>
+   </section>
+
+   <div class="footer">
+      <p>Desenvolvido por Thalles</p>
+   </div>
+         
+
+   <script>
+      function toggleMenu() {
+         const menu = document.querySelector('.hamburger');
+         const navigation = document.querySelector('.navigation');
+         const header = document.querySelector('header');
+         
+         menu.classList.toggle('is-active');
+         navigation.classList.toggle('active');
+         header.classList.toggle('active');
+      }
+      window.addEventListener('scroll', function() {
+         const header = document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0)
+      });
+   </script>
+</body>
+
+</html>
