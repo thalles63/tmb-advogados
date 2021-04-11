@@ -77,60 +77,96 @@
          <p>msuidfn dfsuin fuids nuif nsdui nuid nsiu fndsuin uids nui dnsuinfsdi niu nsuidn</p>
       </div>
       <div class="content">
-         <div class="box">
+         <div class="bg-backdrop">
+            <div class="close" onclick="fadeoutbg()">X</div>
+            <div class="box-selected"></div>
+         </div>
+         <div class="box box-area" onclick="fadeinbg(0)">
+            <div class="img-box">
+               <img src="images/area0.jpg">
+            </div>
+            <div class="text">
+               <h3>Direito tributário</h3>
+               <p>
+                  É o conjunto de leis que regulam a arrecadação de tributos, como taxas e impostos, assim como a fiscalização dessa prática, regulando as relações jurídicas estabelecidas entre Estado e contribuinte. Essa ciência também cuida das normas relacionadas à arrecadação dos tributos, análise da relação tributária entre Estado e contribuintes, e o gerador de tributos. O Direito Tributário tem como principal função o combate de possíveis abusos por parte do fisco, com o objetivo de arrecadar tributos para custear projetos ou como usurpação das riquezas individuais e manobra política. Dessa forma, por meio do Direito Tributário, temos a única forma de regular e atribuir tributos aos componentes da sociedade, por isso, o Estado é obrigado a fazer um planejamento dos gastos e receitas que financiarão qualquer projeto.
+               </p>
+            </div>
+         </div>
+         <div class="box box-area" onclick="fadeinbg(1)">
             <div class="img-box">
                <img src="images/area1.jpg">
             </div>
             <div class="text">
                <h3>Direito contratual</h3>
+               <p>
+                  Com vasta experiência nesta área, prestamos assessoria na celebração de contratos de qualquer natureza, oferecendo segurança jurídica aos clientes, e os serviços que melhor atendam às suas necessidades.
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(2)">
             <div class="img-box">
                <img src="images/area2.jpg">
             </div>
             <div class="text">
                <h3>Direito empresarial</h3>
+               <p>
+                  É um ramo que abrange a atividade negocial do empresário, e de qualquer pessoa física ou jurídica, destinada a fins de natureza econômica, sendo um conjunto variado de matérias, incluindo as obrigações dos empresários, as sociedades empresárias, os contratos especiais de comércio, os títulos de crédito, a propriedade intelectual, entre outras.
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(3)">
             <div class="img-box">
                <img src="images/area3.jpg">
             </div>
             <div class="text">
                <h3>Direito de família e sucessório</h3>
+               <p>
+                  É o conjunto de normas que disciplinam a transferência do patrimônio de alguém, depois de sua morte, ao herdeiro, em virtude de lei ou testamento
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(4)">
             <div class="img-box">
                <img src="images/area4.jpg">
             </div>
             <div class="text">
                <h3>Direito agrário</h3>
+               <p>
+                  É o ramo do  Direito que visa o estudo das relações entre o homem e a propriedade rural. Hoje o Direito Agrário acompanha a evolução do Direito Ambiental, na medida em que vai sendo estudado sob as novas teorias Geopolíticas.
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(5)">
             <div class="img-box">
                <img src="images/area5.jpg">
             </div>
             <div class="text">
                <h3>Direito do consumidor</h3>
+               <p>
+                  Referente ao conjunto regras e princípios jurídicos que trata das relações de consumo, isto é, as relações existentes entre o consumidor e o fornecedor de bens ou de serviços.
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(6)">
             <div class="img-box">
                <img src="images/area6.jpg">
             </div>
             <div class="text">
                <h3>Direito do trabalho</h3>
+               <p>
+                  É o ramo jurídico que estuda as relações de trabalho. Esse direito é composto de conjuntos de normas, princípios e outras fontes jurídicas que regem as relações de trabalho, regulamentando a condição jurídica dos trabalhadores
+               </p>
             </div>
          </div>
-         <div class="box">
+         <div class="box box-area" onclick="fadeinbg(7)">
             <div class="img-box">
                <img src="images/area7.jpg">
             </div>
             <div class="text">
                <h3>Cobrança judicial e extrajudicial</h3>
+               <p>
+                  A advocacia de Cobrança é recomendada para carteira pequena e média de devedores, as cobranças são realizadas individualmente, analisadas minuciosamente cada caso e a forma de cobrança mais efetiva, há possibilidades de acordos extrajudicial (ex. contrato de confissão de dívida), ou acordos judiciais (homologado pelo juiz), caso seja necessário a cobrança judicial (ações de cobranças, execuções etc.), o credor não arcará com custas iniciais de honorários advocatícios, o valor é descontado em caso de êxito na demanda.
+               </p>
             </div>
          </div>
       </div>
@@ -180,6 +216,25 @@
          const header = document.querySelector('header');
          header.classList.toggle("sticky", window.scrollY > 0)
       });
+      function fadeinbg(index) {
+         const bg = document.querySelector('.bg-backdrop');
+         bg.style.opacity = 1;
+         bg.style.zIndex = 2;
+         
+         document.querySelector('body').style.overflow = 'hidden';
+         const box = document.querySelectorAll('.box-area')[index];
+         const selectedBox = document.querySelector('.box-selected');
+         selectedBox.innerHTML = box.innerHTML;
+         
+      }
+      function fadeoutbg() {
+         const bg = document.querySelector('.bg-backdrop');
+         bg.style.opacity = 0;
+         document.querySelector('body').style.overflow = 'auto';
+         setTimeout(() => {
+            bg.style.zIndex = -1;
+         }, 300);
+      }
    </script>
 </body>
 
