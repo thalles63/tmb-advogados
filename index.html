@@ -196,6 +196,7 @@
                <i class="las la-phone"></i>
                <span>
                   <h5><a href="https://wa.me/+5554992135602" target="_blank">(54) 99213-5602</a></h5>
+                  <p>Telefone ou Whatsapp</p>
                </span>
             </div>
             <div class="contact-info">
@@ -237,11 +238,13 @@
    </section>
 
    <div class="footer">
-      <p>Desenvolvido por Thalles</p>
+      <p>Copyright © <span id="year"></span> TMB Advogados. <br> Todos os direitos reservados. <br> Desenvolvido por <a class="author" href="mailto:thalles63@gmail.com">Thalles</a></p>
    </div>
          
 
    <script>
+      const year = document.querySelector("#year");
+      year.innerHTML = new Date().getFullYear();
       function toggleMenu() {
          const menu = document.querySelector('.hamburger');
          const navigation = document.querySelector('.navigation');

@@ -296,7 +296,7 @@ header .navigation li:hover::after {
    width: 100%;
 }
 .footer {
-   padding: 8px 40px;
+   padding: 50px 40px;
    border-top: 1px solid rgba(0,0,0,0.1);
    text-align: center;
 }
@@ -479,4 +479,8 @@ button:focus {
    flex: 1 0 100%;
    font-size: 14px;
    margin-left: 10px;
+}
+.author {
+   text-decoration: none;
+   color: #F44336;
 }
