@@ -467,7 +467,7 @@ button:focus {
    background: #FFF;
 }
 .contact-column .contact-info h5 {
-   font-size: 20px;
+   font-size: 18px;
    margin-bottom: 5px;
    color: #555;   
    font-weight: 400;
@@ -480,6 +480,44 @@ button:focus {
 @media(max-width: 991px) {
    .contato-inner {
       flex-flow: column;
+   }
+   .quemsomos .content .box {
+      flex-direction: column;
+      width: 100%;
+   }
+   .quemsomos .content .box.right {
+      flex-direction: column-reverse;
+   }
+   .quemsomos .content .box .text .text-name {
+      flex-direction: column;
+   }
+   .quemsomos .content .box .img-box {
+      display: flex;
+      justify-content: center;
+   }
+   .quemsomos .content .box .img-box img {
+      position: relative;
+      right: auto !important;
+      left: auto !important;
+   }
+   .quemsomos, .areas, .contato {
+      padding-top: 50px;
+   }
+   .areas .title>p {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .close {
+      height: 40px;
+      width: 40px;
+      right: -10px;
+   }
+   .areas .box-selected .img-box {
+      height: 100px !important;
+   }
+   .areas .box-selected .text p {
+      max-height: 50vh;
+      overflow: scroll;
    }
 }
 .social {
