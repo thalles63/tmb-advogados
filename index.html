@@ -25,10 +25,10 @@
          </button>
       </div>
       <ul class="navigation">
-         <li><a href="#banner" onclick="toggleMenu()">Inicial</a></li>
-         <li><a href="#quemsomos" onclick="toggleMenu()">Quem somos</a></li>
-         <li><a href="#areas" onclick="toggleMenu()">Áreas de Atuação</a></li>
-         <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+         <li><a href="javascript:void(0)" onclick="goTo('banner');closeMenu();">Inicial</a></li>
+         <li><a href="javascript:void(0)" onclick="goTo('quemsomos');closeMenu()">Quem somos</a></li>
+         <li><a href="javascript:void(0)" onclick="goTo('areas');closeMenu()">Áreas de Atuação</a></li>
+         <li><a href="javascript:void(0)" onclick="goTo('contato');closeMenu()">Contato</a></li>
          <div class="header-social social">
             <div><a href="https://wa.me/whatsappphonenumber/?text=urlencodedtext"><i class="lab la-whatsapp"></i></a></div>
             <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
@@ -251,10 +251,24 @@
          navigation.classList.toggle('active');
          header.classList.toggle('active');
       }
+      function closeMenu() {
+         const menu = document.querySelector('.hamburger');
+         const navigation = document.querySelector('.navigation');
+         const header = document.querySelector('header');
+         
+         menu.classList.remove('is-active');
+         navigation.classList.remove('active');
+         header.classList.remove('active');
+      }
       window.addEventListener('scroll', function() {
          const header = document.querySelector('header');
          header.classList.toggle("sticky", window.scrollY > 0)
       });
+      function goTo(section) {
+         document.querySelector('#' + section).scrollIntoView({ 
+            behavior: 'smooth' 
+         });
+      }
       function fadeinbg(index) {
          const bg = document.querySelector('.bg-backdrop');
          bg.style.opacity = 1;
