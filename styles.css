@@ -9,6 +9,11 @@ p {
    font-weight: 300;
    color: #111;
 }
+.quemsomos, .areas, .contato {
+   max-width: 1550px;
+   margin: auto;
+   padding-top: 110px;
+}
 .banner {
    position: relative;
    width: 100%;
@@ -79,6 +84,7 @@ header .navigation {
 header .navigation li {
    list-style: none;
    margin-left: 30px;
+   padding-top: 3px;
 }
 header .navigation li a {
    text-decoration: none;
@@ -99,9 +105,6 @@ header .navigation li::after {
 }
 header .navigation li:hover::after {
    width: 100%;
-}
-section {
-   padding: 100px;
 }
 .row {
    position: relative;
@@ -237,15 +240,15 @@ section {
    margin-bottom: 20px;
    font-weight: 500;
 }
-.contact-form .input-box {
+.contact-column .input-box {
    position: relative;
    width: 100%;
    margin-bottom: 20px;
 }
-.contact-form .input-box input,
-.contact-form .input-box textarea {
+.contact-column .input-box input,
+.contact-column .input-box textarea {
    width: 100%;
-   border: 1px solid #555;
+   border: 1px solid #ccc;
    padding: 10px;
    color: #111;
    outline: none;
@@ -253,7 +256,7 @@ section {
    font-weight: 300;
    resize: none;
 }
-.contact-form .input-box input[type="submit"] {
+.contact-column .input-box input[type="submit"] {
    font-size: 1em;
    color: #FFF;
    background: #F44336;
@@ -265,6 +268,32 @@ section {
    font-weight: 500;
    max-width: 100px;
    cursor: pointer;
+}
+.contact-column {
+   flex-basis: 50%;
+   margin-bottom: 30px;
+}
+.contato {
+   background: url('/images/contact_bg.jpg');
+   width: 100%;
+   max-width: none;
+   background-size: cover;
+}
+.contato-inner {
+   display: flex;
+   max-width: 1550px;
+   margin: auto;
+}
+@media(max-width: 1368px) {
+   .contato-inner {
+      max-width: 1100px;
+   }
+}
+.contato .title {
+   margin-bottom: 60px;
+}
+.maps-form iframe {
+   width: 100%;
 }
 .footer {
    padding: 8px 40px;
@@ -306,9 +335,19 @@ button:focus {
       margin-left: 0;
       padding: 15px;
    }
+   header .navigation .social {
+      margin: 0;
+      margin-top: 20px;
+   }
+   header .navigation .social a{
+      font-size: 30px;
+   }
    header .navigation li a {
       color: #111;
       font-size: 1.6em;
+   }
+   header .logo {
+      font-size: 1.5em;
    }
    .menu-toggle {
       display: initial;
@@ -382,4 +421,62 @@ button:focus {
    -ms-transform: scale(1.1);
    -o-transform: scale(1.1);
    transform: scale(1.1);
+}
+.contact-info {
+   display: flex;
+   margin-bottom: 30px;
+   align-items: center;
+}
+.contact-column .contact-info .las {
+   font-size: 28px;
+   color: #F44336;
+   margin: 10px;
+   margin-right: 30px;
+}
+.contact-column .contact-info p {
+   padding: 0;
+   background: #FFF;
+}
+.contact-column .contact-info h5 {
+   font-size: 20px;
+   margin-bottom: 5px;
+   color: #555;   
+   font-weight: 400;
+   background: #FFF;
+}
+.contact-column .contact-info h5 a {
+   text-decoration: none;
+   color: #F44336;
+}
+@media(max-width: 991px) {
+   .contato-inner {
+      flex-flow: column;
+   }
+}
+.social {
+   display: flex;
+   font-size: 28px;
+   flex-wrap: wrap;
+}
+.social div {
+   margin: 10px;
+   margin-right: 5px;
+   cursor: pointer;
+}
+.header-social {
+   margin-left: 25px;
+}
+.header-social.social div {
+   margin: 0;
+   margin-right: 5px;
+   font-size: 22px;
+}
+.social div a {
+   text-decoration: none;
+   color: #F44336;
+}
+.title-social {
+   flex: 1 0 100%;
+   font-size: 14px;
+   margin-left: 10px;
 }

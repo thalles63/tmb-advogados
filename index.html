@@ -9,6 +9,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
    <link rel="stylesheet" href="styles.css">
    <link href="hamburgers.min.css" rel="stylesheet">
 </head>
@@ -28,6 +29,11 @@
          <li><a href="#quemsomos" onclick="toggleMenu()">Quem somos</a></li>
          <li><a href="#areas" onclick="toggleMenu()">Áreas de Atuação</a></li>
          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+         <div class="header-social social">
+            <div><a href="https://wa.me/whatsappphonenumber/?text=urlencodedtext"><i class="lab la-whatsapp"></i></a></div>
+            <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
+            <div><a href="https://instagram.com/tmb.advogados" target="_blank"><i class="lab la-instagram"></i></a></div>
+         </div>
       </ul>
    </header>
    <section class="banner" id="banner">
@@ -175,26 +181,59 @@
    <section class="contato" id="contato">
       <div class="title">
          <h2 class="title-text">Contato</h2>
-         <p>Entre em contato através do formulário ou um de nossos canais.</p>
+         <p>Faça-nos uma visita ou entre em contato através de um de nossos canais.</p>
       </div>
-      <div class="contact-form">
-         <h3>Envie-nos uma mensagem</h3>
-         <div class="input-box">
-            <input type="text" placeholder="Nome">
+      <div class="contato-inner">
+         <div class="contact-column">
+            <div class="contact-info">
+               <i class="las la-home"></i>
+               <span>
+                  <h5>Rua Doutor Flores, nº 210, sala 03</h5>
+                  <p>Vacaria/RS</p>
+               </span>
+            </div>
+            <div class="contact-info">
+               <i class="las la-phone"></i>
+               <span>
+                  <h5><a href="https://wa.me/+5554992135602" target="_blank">(54) 99213-5602</a></h5>
+               </span>
+            </div>
+            <div class="contact-info">
+               <i class="las la-paper-plane"></i>
+               <span>
+                  <h5><a href="mailto:tmbadvs@gmail.com" target="_blank">tmbadvs@gmail.com</a></h5>
+               </span>
+            </div>
+            <div class="social">
+               <p class="title-social">Visite também nossas redes sociais</p>
+               <div><a href="https://wa.me/+5554992135602" target="_blank"><i class="lab la-whatsapp"></i></a></div>
+               <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
+               <div><a href="https://instagram.com/tmb.advogados" target="_blank"><i class="lab la-instagram"></i></a></div>
+            </div>
          </div>
-         <div class="input-box">
-            <input type="text" placeholder="Email">
-         </div>
-         <div class="input-box">
-            <input type="text" placeholder="Telefone">
-         </div>
-         <div class="input-box">
-            <textarea placeholder="Mensagem"></textarea>
-         </div>
-         <div class="input-box">
-            <input type="submit" value="Enviar">
+   
+         <div class="contact-column">
+            <!-- <div class="input-box">
+               <input type="text" placeholder="Nome">
+            </div>
+            <div class="input-box">
+               <input type="text" placeholder="Email">
+            </div>
+            <div class="input-box">
+               <input type="text" placeholder="Telefone">
+            </div>
+            <div class="input-box">
+               <textarea rows="5" placeholder="Mensagem"></textarea>
+            </div>
+            <div class="input-box">
+               <input type="submit" value="Enviar">
+            </div> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.5456950380216!2d-50.93681931187405!3d-28.504148020359363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951e43f3b1ae7783%3A0x96bd277f5c8f67d5!2sR.%20Dr.%20Flores%2C%20210%20-%20Centro%2C%20Vacaria%20-%20RS%2C%2095200-000!5e0!3m2!1spt-BR!2sbr!4v1618186625996!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
          </div>
       </div>
+      <!-- <div style="max-width: 1550px; margin: auto;">
+         
+      </div> -->
    </section>
 
    <div class="footer">
