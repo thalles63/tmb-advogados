@@ -21,7 +21,7 @@ p {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('images/banner.png');
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/banner.png');
    background-position: center;
    background-size: cover;
 }
@@ -303,7 +303,7 @@ header .navigation li:hover::after {
    margin-bottom: 30px;
 }
 .contato {
-   background: url('/images/contact_bg.jpg');
+   background: url('../images/contact_bg.jpg');
    width: 100%;
    max-width: none;
    background-size: cover;
