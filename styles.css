@@ -477,6 +477,15 @@ button:focus {
    text-decoration: none;
    color: #F44336;
 }
+.banner .content h2 span {
+   font-weight: 100;
+}
+.banner .content {
+   margin-top: 35px;
+}
+.banner .content img {
+   height: 150px;
+}
 @media(max-width: 991px) {
    .contato-inner {
       flex-flow: column;
@@ -518,6 +527,9 @@ button:focus {
    .areas .box-selected .text p {
       max-height: 50vh;
       overflow: scroll;
+   }
+   .banner .content {
+      margin-top: 0;
    }
 }
 .social {
