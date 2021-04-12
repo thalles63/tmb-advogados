@@ -214,10 +214,10 @@ header .navigation li:hover::after {
 }
 .quemsomos .content .box .img-box {
    position: relative;
-   width: 100%;
    background: #FFF;
    height: 250px;
-   min-width: 40%;
+   width: 307px;
+   min-width: 307px;
 }
 .quemsomos .content .box .img-box img {
    position: absolute;
