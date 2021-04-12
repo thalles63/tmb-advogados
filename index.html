@@ -1,295 +1,260 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TMB Advogados</title>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>TMB Advogados</title>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-   <link rel="stylesheet" href="styles.css">
-   <link href="hamburgers.min.css" rel="stylesheet">
-</head>
+      <!-- INICIO ESTILOS CSS -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+      <link href="/css/hamburgers.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/css/styles.css">
+      <!-- FINAL ESTILOS CSS -->
+   </head>
 
-<body>
-   <header>
-      <a href="index.html" class="logo">TMB <span>Advogados</span></a>
-      <div class="menu-toggle">
-         <button class="hamburger hamburger--spin custom-hamburguer" type="button" onclick="toggleMenu()">
-            <span class="hamburger-box">
-               <span class="hamburger-inner"></span>
-            </span>
-         </button>
-      </div>
-      <ul class="navigation">
-         <li><a href="javascript:void(0)" onclick="goTo('banner');closeMenu();">Inicial</a></li>
-         <li><a href="javascript:void(0)" onclick="goTo('quemsomos');closeMenu()">Quem somos</a></li>
-         <li><a href="javascript:void(0)" onclick="goTo('areas');closeMenu()">Áreas de Atuação</a></li>
-         <li><a href="javascript:void(0)" onclick="goTo('contato');closeMenu()">Contato</a></li>
-         <div class="header-social social">
-            <div><a href="https://wa.me/+5554992135602" target="_blank"><i class="lab la-whatsapp"></i></a></div>
-            <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
-            <div><a href="https://instagram.com/tmb.advogados" target="_blank"><i class="lab la-instagram"></i></a></div>
-         </div>
-      </ul>
-   </header>
-   <section class="banner" id="banner">
-      <div class="content">
-         <img src="/images/logo.png" alt="">
-         <h2>TMB <span>Advogados</span></h2>
-         <p>Advocacia e consultoria</p>
-         <a href="javascript:void(0)" onclick="goTo('quemsomos')" class="btn">Saiba mais</a>
-      </div>
-   </section>
-
-   <section class="quemsomos" id="quemsomos">
-      <div class="title">
-         <h2 class="title-text">Quem somos</h2>
-         <p>Conheça um pouco mais sobre os profissionais que atuam na TMB Advogados.</p>
-      </div>
-      <div class="content">
-         <div class="box">
-            <div class="img-box">
-               <img src="images/thays.jpg">
-            </div>
-            <div class="text">
-               <div class="text-name">
-                  <h3>Thays Maineri Paim Machado</h3>
-                  <div class="text-oab">OAB/RS 101.911</div>
-               </div>
-               <p>Graduada pela Universidade de Caxias do Sul - UCS; Especialista em Direito constitucional pela universidade LFG; Especialista em Direito Processual Civil pela universidade Anhanguera/LFG; Especialista em Direito do Consumidor pela Universidade Legale; Atuação na área empresarial, consumerista, tributária e civil há mais de 05 (cinco) anos; Áreas de atuação: Direito de família e sucessões, consumerista, tributário, contratos e empresarial;
-               </p>
-            </div>
-         </div>
-         <div class="box right" style="margin-left: auto;">
-            <div class="text">
-               <div class="text-name">
-                  <h3>Mateus Boeira</h3>
-                  <div class="text-oab">OAB/RS 105.120</div>
-               </div>
-               <p>Graduado pela Universidade de Caxias do Sul - UCS; Especialista em Direito trabalhista pela Universidade Legale; Áreas de atuação:  Direito trabalhista, consumerista, trânsito e civil e Ações de Cobrança e Execução (Cheque, Nota Promissória, Duplicata); Prêmios e Títulos: Láurea Acadêmica, Universidade de Caxias do Sul (2016); Bolsa de Estudos, Escola Superior do Ministério Público (2016); Cursos de Aperfeiçoamento: Curso de Preparação da Escola Superior do Ministério Público (2016); Curso de Atualização em Direito e Prática Processual Penal - Faculdade IDC (2016).
-               </p>
-            </div>
-            <div class="img-box">
-               <img class="right" src="images/mateus.jpg">
-            </div>
-         </div>
-         <div class="box">
-            <div class="img-box">
-               <img src="images/juliana.jpg">
-            </div>
-            <div class="text">
-               <div class="text-name">
-                  <h3>Juliana Deboni Telles</h3>
-                  <div class="text-oab">OAB/RS 101.812</div>
-               </div>
-               <p>Graduada pela Universidade de Caxias do Sul - UCS; Especialista em Direito Consumerista pela Universidade Legale; Áreas de atuação:  Direito administrativo, Cívil, Consumerista, Contratos, Família e Sucessões, Execuções de títulos, Cobranças e acordos extrajudiciais e judiciais.
-               </p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="areas" id="areas">
-      <div class="title">
-         <h2 class="title-text">Áreas de Atuação</h2>
-         <p>Estas são as áreas em que atuamos. Clique em cada uma delas para saber mais sobre o assunto.</p>
-      </div>
-      <div class="content">
-         <div class="bg-backdrop">
-            <div class="close" onclick="fadeoutbg()">X</div>
-            <div class="box-selected"></div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(0)">
-            <div class="img-box">
-               <img src="images/area0.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito tributário</h3>
-               <p>
-                  É o conjunto de leis que regulam a arrecadação de tributos, como taxas e impostos, assim como a fiscalização dessa prática, regulando as relações jurídicas estabelecidas entre Estado e contribuinte. Essa ciência também cuida das normas relacionadas à arrecadação dos tributos, análise da relação tributária entre Estado e contribuintes, e o gerador de tributos. O Direito Tributário tem como principal função o combate de possíveis abusos por parte do fisco, com o objetivo de arrecadar tributos para custear projetos ou como usurpação das riquezas individuais e manobra política. Dessa forma, por meio do Direito Tributário, temos a única forma de regular e atribuir tributos aos componentes da sociedade, por isso, o Estado é obrigado a fazer um planejamento dos gastos e receitas que financiarão qualquer projeto.
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(1)">
-            <div class="img-box">
-               <img src="images/area1.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito contratual</h3>
-               <p>
-                  Com vasta experiência nesta área, prestamos assessoria na celebração de contratos de qualquer natureza, oferecendo segurança jurídica aos clientes, e os serviços que melhor atendam às suas necessidades.
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(2)">
-            <div class="img-box">
-               <img src="images/area2.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito empresarial</h3>
-               <p>
-                  É um ramo que abrange a atividade negocial do empresário, e de qualquer pessoa física ou jurídica, destinada a fins de natureza econômica, sendo um conjunto variado de matérias, incluindo as obrigações dos empresários, as sociedades empresárias, os contratos especiais de comércio, os títulos de crédito, a propriedade intelectual, entre outras.
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(3)">
-            <div class="img-box">
-               <img src="images/area3.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito de família e sucessório</h3>
-               <p>
-                  É o conjunto de normas que disciplinam a transferência do patrimônio de alguém, depois de sua morte, ao herdeiro, em virtude de lei ou testamento
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(4)">
-            <div class="img-box">
-               <img src="images/area4.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito agrário</h3>
-               <p>
-                  É o ramo do  Direito que visa o estudo das relações entre o homem e a propriedade rural. Hoje o Direito Agrário acompanha a evolução do Direito Ambiental, na medida em que vai sendo estudado sob as novas teorias Geopolíticas.
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(5)">
-            <div class="img-box">
-               <img src="images/area5.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito do consumidor</h3>
-               <p>
-                  Referente ao conjunto regras e princípios jurídicos que trata das relações de consumo, isto é, as relações existentes entre o consumidor e o fornecedor de bens ou de serviços.
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(6)">
-            <div class="img-box">
-               <img src="images/area6.jpg">
-            </div>
-            <div class="text">
-               <h3>Direito do trabalho</h3>
-               <p>
-                  É o ramo jurídico que estuda as relações de trabalho. Esse direito é composto de conjuntos de normas, princípios e outras fontes jurídicas que regem as relações de trabalho, regulamentando a condição jurídica dos trabalhadores
-               </p>
-            </div>
-         </div>
-         <div class="box box-area" onclick="fadeinbg(7)">
-            <div class="img-box">
-               <img src="images/area7.jpg">
-            </div>
-            <div class="text">
-               <h3>Cobrança judicial e extrajudicial</h3>
-               <p>
-                  A advocacia de Cobrança é recomendada para carteira pequena e média de devedores, as cobranças são realizadas individualmente, analisadas minuciosamente cada caso e a forma de cobrança mais efetiva, há possibilidades de acordos extrajudicial (ex. contrato de confissão de dívida), ou acordos judiciais (homologado pelo juiz), caso seja necessário a cobrança judicial (ações de cobranças, execuções etc.), o credor não arcará com custas iniciais de honorários advocatícios, o valor é descontado em caso de êxito na demanda.
-               </p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <section class="contato" id="contato">
-      <div class="title">
-         <h2 class="title-text">Contato</h2>
-         <p>Faça-nos uma visita ou entre em contato através de um de nossos canais.</p>
-      </div>
-      <div class="contato-inner">
-         <div class="contact-column">
-            <div class="contact-info">
-               <i class="las la-home"></i>
-               <span>
-                  <h5>Rua Doutor Flores, nº 210, sala 03</h5>
-                  <p>Vacaria/RS</p>
+   <body>
+      <!-- INICIO HEADER -->
+      <header>
+         <a href="index.html" class="logo">TMB <span>Advogados</span></a>
+         <div class="menu-toggle">
+            <button class="hamburger hamburger--spin custom-hamburguer" type="button" onclick="toggleMenu()">
+               <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
                </span>
-            </div>
-            <div class="contact-info">
-               <i class="las la-phone"></i>
-               <span>
-                  <h5><a href="https://wa.me/+5554992135602" target="_blank">(54) 99213-5602</a></h5>
-                  <p>Telefone ou Whatsapp</p>
-               </span>
-            </div>
-            <div class="contact-info">
-               <i class="las la-paper-plane"></i>
-               <span>
-                  <h5><a href="mailto:tmbadvs@gmail.com" target="_blank">tmbadvs@gmail.com</a></h5>
-               </span>
-            </div>
-            <div class="social">
-               <p class="title-social">Visite também nossas redes sociais</p>
+            </button>
+         </div>
+         <ul class="navigation">
+            <li><a href="javascript:void(0)" onclick="goTo('banner');closeMenu();">Inicial</a></li>
+            <li><a href="javascript:void(0)" onclick="goTo('quemsomos');closeMenu()">Quem somos</a></li>
+            <li><a href="javascript:void(0)" onclick="goTo('areas');closeMenu()">Áreas de Atuação</a></li>
+            <li><a href="javascript:void(0)" onclick="goTo('contato');closeMenu()">Contato</a></li>
+            <div class="header-social social">
                <div><a href="https://wa.me/+5554992135602" target="_blank"><i class="lab la-whatsapp"></i></a></div>
                <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
                <div><a href="https://instagram.com/tmb.advogados" target="_blank"><i class="lab la-instagram"></i></a></div>
             </div>
+         </ul>
+      </header>
+      <!-- FINAL HEADER -->
+
+      <!-- INICIO BANNER -->
+      <section class="banner" id="banner">
+         <div class="content">
+            <img src="/images/logo.png" alt="">
+            <h2>TMB <span>Advogados</span></h2>
+            <p>Advocacia e consultoria</p>
+            <a href="javascript:void(0)" onclick="goTo('quemsomos')" class="btn">Saiba mais</a>
          </div>
-   
-         <div class="contact-column">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.5456950380216!2d-50.93681931187405!3d-28.504148020359363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951e43f3b1ae7783%3A0x96bd277f5c8f67d5!2sR.%20Dr.%20Flores%2C%20210%20-%20Centro%2C%20Vacaria%20-%20RS%2C%2095200-000!5e0!3m2!1spt-BR!2sbr!4v1618186625996!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      <!-- FINAL BANNER -->
+
+      <!-- INICIO QUEM SOMOS -->
+      <section class="quemsomos" id="quemsomos">
+         <div class="title">
+            <h2 class="title-text">Quem somos</h2>
+            <p>Conheça um pouco mais sobre os profissionais que atuam na TMB Advogados.</p>
          </div>
+         <div class="content">
+            <div class="box">
+               <div class="img-box">
+                  <img src="images/thays.jpg">
+               </div>
+               <div class="text">
+                  <div class="text-name">
+                     <h3>Thays Maineri Paim Machado</h3>
+                     <div class="text-oab">OAB/RS 101.911</div>
+                  </div>
+                  <p>Graduada pela Universidade de Caxias do Sul - UCS; Especialista em Direito constitucional pela universidade LFG; Especialista em Direito Processual Civil pela universidade Anhanguera/LFG; Especialista em Direito do Consumidor pela Universidade Legale; Atuação na área empresarial, consumerista, tributária e civil há mais de 05 (cinco) anos; Áreas de atuação: Direito de família e sucessões, consumerista, tributário, contratos e empresarial;
+                  </p>
+               </div>
+            </div>
+            <div class="box right" style="margin-left: auto;">
+               <div class="text">
+                  <div class="text-name">
+                     <h3>Mateus Boeira</h3>
+                     <div class="text-oab">OAB/RS 105.120</div>
+                  </div>
+                  <p>Graduado pela Universidade de Caxias do Sul - UCS; Especialista em Direito trabalhista pela Universidade Legale; Áreas de atuação:  Direito trabalhista, consumerista, trânsito e civil e Ações de Cobrança e Execução (Cheque, Nota Promissória, Duplicata); Prêmios e Títulos: Láurea Acadêmica, Universidade de Caxias do Sul (2016); Bolsa de Estudos, Escola Superior do Ministério Público (2016); Cursos de Aperfeiçoamento: Curso de Preparação da Escola Superior do Ministério Público (2016); Curso de Atualização em Direito e Prática Processual Penal - Faculdade IDC (2016).
+                  </p>
+               </div>
+               <div class="img-box">
+                  <img class="right" src="images/mateus.jpg">
+               </div>
+            </div>
+            <div class="box">
+               <div class="img-box">
+                  <img src="images/juliana.jpg">
+               </div>
+               <div class="text">
+                  <div class="text-name">
+                     <h3>Juliana Deboni Telles</h3>
+                     <div class="text-oab">OAB/RS 101.812</div>
+                  </div>
+                  <p>Graduada pela Universidade de Caxias do Sul - UCS; Especialista em Direito Consumerista pela Universidade Legale; Áreas de atuação:  Direito administrativo, Cívil, Consumerista, Contratos, Família e Sucessões, Execuções de títulos, Cobranças e acordos extrajudiciais e judiciais.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FINAL QUEM SOMOS -->
+
+      <!-- INICIO AREAS DE ATUAÇÃO  -->
+      <section class="areas" id="areas">
+         <div class="title">
+            <h2 class="title-text">Áreas de Atuação</h2>
+            <p>Estas são as áreas em que atuamos. Clique em cada uma delas para saber mais sobre o assunto.</p>
+         </div>
+         <div class="content">
+            <div class="bg-backdrop">
+               <div class="close" onclick="fadeoutbg()">X</div>
+               <div class="box-selected"></div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(0)">
+               <div class="img-box">
+                  <img src="images/area0.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito tributário</h3>
+                  <p>
+                     É o conjunto de leis que regulam a arrecadação de tributos, como taxas e impostos, assim como a fiscalização dessa prática, regulando as relações jurídicas estabelecidas entre Estado e contribuinte. Essa ciência também cuida das normas relacionadas à arrecadação dos tributos, análise da relação tributária entre Estado e contribuintes, e o gerador de tributos. O Direito Tributário tem como principal função o combate de possíveis abusos por parte do fisco, com o objetivo de arrecadar tributos para custear projetos ou como usurpação das riquezas individuais e manobra política. Dessa forma, por meio do Direito Tributário, temos a única forma de regular e atribuir tributos aos componentes da sociedade, por isso, o Estado é obrigado a fazer um planejamento dos gastos e receitas que financiarão qualquer projeto.
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(1)">
+               <div class="img-box">
+                  <img src="images/area1.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito contratual</h3>
+                  <p>
+                     Com vasta experiência nesta área, prestamos assessoria na celebração de contratos de qualquer natureza, oferecendo segurança jurídica aos clientes, e os serviços que melhor atendam às suas necessidades.
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(2)">
+               <div class="img-box">
+                  <img src="images/area2.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito empresarial</h3>
+                  <p>
+                     É um ramo que abrange a atividade negocial do empresário, e de qualquer pessoa física ou jurídica, destinada a fins de natureza econômica, sendo um conjunto variado de matérias, incluindo as obrigações dos empresários, as sociedades empresárias, os contratos especiais de comércio, os títulos de crédito, a propriedade intelectual, entre outras.
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(3)">
+               <div class="img-box">
+                  <img src="images/area3.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito de família e sucessório</h3>
+                  <p>
+                     É o conjunto de normas que disciplinam a transferência do patrimônio de alguém, depois de sua morte, ao herdeiro, em virtude de lei ou testamento
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(4)">
+               <div class="img-box">
+                  <img src="images/area4.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito agrário</h3>
+                  <p>
+                     É o ramo do  Direito que visa o estudo das relações entre o homem e a propriedade rural. Hoje o Direito Agrário acompanha a evolução do Direito Ambiental, na medida em que vai sendo estudado sob as novas teorias Geopolíticas.
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(5)">
+               <div class="img-box">
+                  <img src="images/area5.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito do consumidor</h3>
+                  <p>
+                     Referente ao conjunto regras e princípios jurídicos que trata das relações de consumo, isto é, as relações existentes entre o consumidor e o fornecedor de bens ou de serviços.
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(6)">
+               <div class="img-box">
+                  <img src="images/area6.jpg">
+               </div>
+               <div class="text">
+                  <h3>Direito do trabalho</h3>
+                  <p>
+                     É o ramo jurídico que estuda as relações de trabalho. Esse direito é composto de conjuntos de normas, princípios e outras fontes jurídicas que regem as relações de trabalho, regulamentando a condição jurídica dos trabalhadores
+                  </p>
+               </div>
+            </div>
+            <div class="box box-area" onclick="fadeinbg(7)">
+               <div class="img-box">
+                  <img src="images/area7.jpg">
+               </div>
+               <div class="text">
+                  <h3>Cobrança judicial e extrajudicial</h3>
+                  <p>
+                     A advocacia de Cobrança é recomendada para carteira pequena e média de devedores, as cobranças são realizadas individualmente, analisadas minuciosamente cada caso e a forma de cobrança mais efetiva, há possibilidades de acordos extrajudicial (ex. contrato de confissão de dívida), ou acordos judiciais (homologado pelo juiz), caso seja necessário a cobrança judicial (ações de cobranças, execuções etc.), o credor não arcará com custas iniciais de honorários advocatícios, o valor é descontado em caso de êxito na demanda.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FINAL AREAS DE ATUAÇÃO  -->
+
+      <!-- INICIO CONTATO -->
+      <section class="contato" id="contato">
+         <div class="title">
+            <h2 class="title-text">Contato</h2>
+            <p>Faça-nos uma visita ou entre em contato através de um de nossos canais.</p>
+         </div>
+         <div class="contato-inner">
+            <div class="contact-column">
+               <div class="contact-info">
+                  <i class="las la-home"></i>
+                  <span>
+                     <h5>Rua Doutor Flores, nº 210, sala 03</h5>
+                     <p>Vacaria/RS</p>
+                  </span>
+               </div>
+               <div class="contact-info">
+                  <i class="las la-phone"></i>
+                  <span>
+                     <h5><a href="https://wa.me/+5554992135602" target="_blank">(54) 99213-5602</a></h5>
+                     <p>Telefone ou Whatsapp</p>
+                  </span>
+               </div>
+               <div class="contact-info">
+                  <i class="las la-paper-plane"></i>
+                  <span>
+                     <h5><a href="mailto:tmbadvs@gmail.com" target="_blank">tmbadvs@gmail.com</a></h5>
+                  </span>
+               </div>
+               <div class="social">
+                  <p class="title-social">Visite também nossas redes sociais</p>
+                  <div><a href="https://wa.me/+5554992135602" target="_blank"><i class="lab la-whatsapp"></i></a></div>
+                  <div><a href="https://facebook.com/tmb.advogados.associados" target="_blank"><i class="lab la-facebook"></i></a></div>
+                  <div><a href="https://instagram.com/tmb.advogados" target="_blank"><i class="lab la-instagram"></i></a></div>
+               </div>
+            </div>
+      
+            <div class="contact-column">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.5456950380216!2d-50.93681931187405!3d-28.504148020359363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951e43f3b1ae7783%3A0x96bd277f5c8f67d5!2sR.%20Dr.%20Flores%2C%20210%20-%20Centro%2C%20Vacaria%20-%20RS%2C%2095200-000!5e0!3m2!1spt-BR!2sbr!4v1618186625996!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+         </div>
+      </section>
+      <!-- FINAL CONTATO -->
+
+      <!-- INICIO FOOTER -->
+      <div class="footer">
+         <p>Copyright © <span id="year"></span> TMB Advogados. <br> Todos os direitos reservados. <br> Desenvolvido por <a class="author" href="mailto:thalles63@gmail.com">Thalles</a></p>
       </div>
-   </section>
+      <!-- FINAL FOOTER -->
 
-   <div class="footer">
-      <p>Copyright © <span id="year"></span> TMB Advogados. <br> Todos os direitos reservados. <br> Desenvolvido por <a class="author" href="mailto:thalles63@gmail.com">Thalles</a></p>
-   </div>
-         
-
-   <script>
-      const year = document.querySelector("#year");
-      year.innerHTML = new Date().getFullYear();
-      function toggleMenu() {
-         const menu = document.querySelector('.hamburger');
-         const navigation = document.querySelector('.navigation');
-         const header = document.querySelector('header');
-         
-         menu.classList.toggle('is-active');
-         navigation.classList.toggle('active');
-         header.classList.toggle('active');
-      }
-      function closeMenu() {
-         const menu = document.querySelector('.hamburger');
-         const navigation = document.querySelector('.navigation');
-         const header = document.querySelector('header');
-         
-         menu.classList.remove('is-active');
-         navigation.classList.remove('active');
-         header.classList.remove('active');
-      }
-      window.addEventListener('scroll', function() {
-         const header = document.querySelector('header');
-         header.classList.toggle("sticky", window.scrollY > 0)
-      });
-      function goTo(section) {
-         document.querySelector('#' + section).scrollIntoView({ 
-            behavior: 'smooth' 
-         });
-      }
-      function fadeinbg(index) {
-         const bg = document.querySelector('.bg-backdrop');
-         bg.style.opacity = 1;
-         bg.style.zIndex = 2;
-         
-         document.querySelector('body').style.overflow = 'hidden';
-         const box = document.querySelectorAll('.box-area')[index];
-         const selectedBox = document.querySelector('.box-selected');
-         selectedBox.innerHTML = box.innerHTML;
-         
-      }
-      function fadeoutbg() {
-         const bg = document.querySelector('.bg-backdrop');
-         bg.style.opacity = 0;
-         document.querySelector('body').style.overflow = 'auto';
-         setTimeout(() => {
-            bg.style.zIndex = -1;
-         }, 300);
-      }
-   </script>
-</body>
-
+      <!-- INICIO SCRIPTS JS -->
+      <script src="/js/scripts.js"></script>
+      <!-- FINAL SCRIPTS JS -->
+   </body>
 </html>
