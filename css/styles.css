@@ -305,6 +305,12 @@ header .header-social.social div {
    .quemsomos, .areas, .contato {
       padding-top: 80px;
    }
+   .quemsomos .content .box .text-name h3 {
+      text-align: center;
+   }
+   .quemsomos .content .box .text .text-name .text-oab {
+      margin-left: 0;
+   }
 }
 /* ------------------ FINAL CSS QUEM SOMOS ------------------ */
 
