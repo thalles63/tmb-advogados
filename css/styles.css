@@ -185,7 +185,7 @@ header .header-social.social div {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/banner.png');
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/banner.webp');
    background-position: center;
    background-size: cover;
 }
@@ -346,7 +346,7 @@ header .header-social.social div {
    background-color: #FFF;
 }
 .areas .content .box-selected{
-   width: 65%;
+   width: 50%;
    margin: auto;
    box-shadow: none;
    border: 0;
@@ -408,15 +408,21 @@ header .header-social.social div {
    -o-transform: scale(1.1);
    transform: scale(1.1);
 }
-@media(max-width:1366px) {
+@media(max-width:1367px) {
    .areas {
       max-width: 1200px;
       margin: auto;
       padding: 0;
       padding-top: 110px;
    }
+   .areas .content .box-selected{
+      width: 65%;
+   }
 }
 @media(max-width: 991px) {
+   .areas .content .box-selected{
+      width: 90%;
+   }
    .areas .content {
       margin-top: 20px;
    }
@@ -430,7 +436,10 @@ header .header-social.social div {
    .close {
       height: 40px !important;
       width: 40px !important;
-      right: -10px !important;
+      right: 0 !important;
+      z-index: 3;
+      background-color: #FFF;
+      top: 90px !important;
    }
    .areas .box-selected .img-box {
       height: 100px !important;
