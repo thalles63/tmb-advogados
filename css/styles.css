@@ -132,7 +132,7 @@ header .header-social.social div {
 .menu-toggle {
    display: none;
 }
-@media(max-width: 991px) {
+@media(max-width: 1025px) {
    header, header.sticky {
       padding: 10px 20px;
    }
@@ -648,6 +648,12 @@ header .header-social.social div {
    padding-bottom: 90px;
    display: none;
 }
+@media(max-width: 1600px) {
+   .contato .container {
+      width: 90%;
+      min-width: auto;
+   }
+}
 @media(max-width: 1200px) {
    .contato .container {
       width: 90%;
@@ -667,7 +673,7 @@ header .header-social.social div {
       width: calc(100% - 350px);
       margin-left: 0;
       padding-left: 0;
-      padding: 40px;
+      padding: 0;
       height: 550px;
    }
 }
