@@ -219,6 +219,9 @@ header .header-social.social div {
    .banner .content {
       margin-top: 0;
    }
+   .banner img {
+      height: 100px !important;
+   }
 }
 /* ------------------ FINAL CSS BANNER ------------------ */
 
@@ -683,6 +686,10 @@ header .header-social.social div {
    .contato .container .contact-form {
       width: 100%;
       height: auto;
+   }
+   .contato .container .contact-form {
+      padding: 0;
+      height: 450px;
    }
    .contato .container .contact-form .form-box .input-box.w100:last-of-type {
       margin-bottom: 0;
