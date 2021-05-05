@@ -197,7 +197,7 @@ header .header-social.social div {
    height: 100vh;
    left: 0;
    top: 0;
-   z-index: 2;
+   z-index: 1;
    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
    background-position: center;
    background-size: cover;
@@ -207,13 +207,13 @@ header .header-social.social div {
    left: 0;
    top: 0;
    position: absolute;
-   z-index: 1;
+   z-index: 0;
 }
 .banner .content {
    max-width: 900px;
    text-align: center;
    margin-top: 35px;
-   z-index: 3;
+   z-index: 2;
 }
 .banner .content h2 {
    font-size: 62px;
@@ -236,8 +236,12 @@ header .header-social.social div {
    .banner .content {
       margin-top: 0;
    }
-   .banner img {
+   .banner .logo {
       height: 100px !important;
+   }
+   .banner img.banner-img {
+      width: auto;
+      height: 100vh;
    }
 }
 /* ------------------ FINAL CSS BANNER ------------------ */
