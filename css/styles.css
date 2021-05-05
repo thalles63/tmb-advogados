@@ -189,14 +189,31 @@ header .header-social.social div {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('../images/banner.webp');
+   overflow: hidden;
+}
+.banner .backdrop {
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   left: 0;
+   top: 0;
+   z-index: 2;
+   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
    background-position: center;
    background-size: cover;
+}
+.banner img.banner-img {
+   width: 100%;
+   left: 0;
+   top: 0;
+   position: absolute;
+   z-index: 1;
 }
 .banner .content {
    max-width: 900px;
    text-align: center;
    margin-top: 35px;
+   z-index: 3;
 }
 .banner .content h2 {
    font-size: 62px;
