@@ -221,6 +221,10 @@ header .header-social.social div {
 }
 .banner .content h2 span {
    font-weight: 100;
+   display: block;
+   line-height: 93px;
+   margin-top: -25px;
+   margin-bottom: 15px;
 }
 .banner .content p {
    font-size: 1em;
@@ -251,21 +255,22 @@ header .header-social.social div {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   flex-direction: column;
+   flex-direction: row;
    margin-top: 40px;
 }
 .quemsomos .content .box {
-   width: 80%;
+   width: 50%;
    display: flex;
    margin: 0;
-   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 .quemsomos .content .box .img-box {
    position: relative;
-   background: #FFF;
+   background: #fff;
    height: 250px;
-   width: 307px;
-   min-width: 307px;
+   width: 250px;
+   min-width: 250px;
 }
 .quemsomos .content .box .img-box img {
    position: absolute;
@@ -286,8 +291,7 @@ header .header-social.social div {
 }
 .quemsomos .content .box .text {
    padding: 25px;
-   display: flex;
-   flex-wrap: wrap;
+   height: 230px;
 }
 .quemsomos .content .box .text .text-name {
    display: flex;
@@ -307,7 +311,15 @@ header .header-social.social div {
    font-size: 14px;
    text-align: justify;
 }
+@media (max-width: 1367px) {
+   .quemsomos {
+      max-width: 1200px;
+   }
+}
 @media(max-width: 991px) {
+   .quemsomos {
+      width: 90%;
+   }
    .quemsomos .content {
       margin-top: 20px;
    }
@@ -324,6 +336,7 @@ header .header-social.social div {
    .quemsomos .content .box .img-box {
       display: flex;
       justify-content: center;
+      width: 100%;
    }
    .quemsomos .content .box .img-box img {
       position: relative;
@@ -338,6 +351,9 @@ header .header-social.social div {
    }
    .quemsomos .content .box .text .text-name .text-oab {
       margin-left: 0;
+   }
+   .quemsomos .content .box .text {
+      height: auto;
    }
 }
 /* ------------------ FINAL CSS QUEM SOMOS ------------------ */
