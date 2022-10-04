@@ -1,6 +1,6 @@
 /* ------------------ INICIO CSS GERAL ------------------ */
 :root {
-   --main-color: #ee6c4d;
+   --main-color: #B29B77;
    --font-color: #111;
 }
 * {
@@ -527,7 +527,7 @@ header.sticky .logo img {
    justify-content: center;
    align-items: center;
    min-height: 750px;
-   background-color: #3e4750;
+   background-color: #1A2A39;
    margin: 0;
    padding: 0;
    max-width: none;
@@ -540,7 +540,7 @@ header.sticky .logo img {
    left: 0;
    width: 50%;
    height: 100%;
-   background: #475059;
+   background: #20364a;
 }
 .contato .container {
    position: relative;
@@ -555,7 +555,7 @@ header.sticky .logo img {
    width: 350px;
    height: calc(100% - 80px);
    z-index: 1;
-   background-color: #3e4750;
+   background-color: #1A2A39;
    padding: 33px;
    justify-content: center;
    flex-direction: column;
