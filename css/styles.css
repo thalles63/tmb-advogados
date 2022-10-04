@@ -80,7 +80,11 @@ header .logo {
    color: #FFF;
    font-weight: 700;
    font-size: 2em;
+   height: 50px;
    text-decoration: none;
+}
+header .logo img {
+   height: 50px;
 }
 header.sticky .logo, header.sticky .logo span {
    color: #111;
@@ -132,6 +136,11 @@ header .header-social.social div {
 .menu-toggle {
    display: none;
 }
+header.active .logo img,
+header.sticky .logo img {
+   filter: invert(1);
+   z-index: 9;
+}
 @media(max-width: 1025px) {
    header, header.sticky {
       padding: 10px 20px;
@@ -168,6 +177,7 @@ header .header-social.social div {
    }
    header .logo {
       font-size: 1.5em;
+
    }
    header .menu-toggle {
       display: initial;
@@ -210,7 +220,7 @@ header .header-social.social div {
    z-index: 0;
 }
 .banner .content {
-   max-width: 900px;
+   max-width: 50%;
    text-align: center;
    margin-top: 35px;
    z-index: 2;
@@ -231,21 +241,21 @@ header .header-social.social div {
    color: #FFF;
 }
 .banner .content img {
-   height: 150px;
+   width: 100%;
 }
 @media(max-width: 991px) {
+   .banner img.banner-img {
+      width: auto;
+      height: 100vh;
+   }
+}
+@media(max-width: 768px) {
    .banner .content h2 {
       font-size: 3em;
    }
    .banner .content {
       margin-top: 0;
-   }
-   .banner .logo {
-      height: 100px !important;
-   }
-   .banner img.banner-img {
-      width: auto;
-      height: 100vh;
+      max-width: 95%;
    }
 }
 /* ------------------ FINAL CSS BANNER ------------------ */
@@ -757,3 +767,24 @@ header .header-social.social div {
    color: var(--main-color);
 }
 /* ------------------ FINAL CSS FOOTER ------------------ */
+
+.whatsapp-bottom {
+   text-decoration: none;
+   position: fixed;
+   width: 60px;
+   height: 60px;
+   background-color: #25d366;
+   bottom: 16px;
+   right: 16px;
+   border-radius: 50%;
+   z-index: 11;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 4px 4px rgb(0 0 0 / 24%), 0px 0px 4px rgb(0 0 0 / 12%);
+   cursor: pointer;
+}
+.whatsapp-bottom a {
+   font-size: 39px;
+   color: #FFF;
+}
