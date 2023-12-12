@@ -42,7 +42,7 @@ p {
    align-items: center;
    flex-direction: column;
 }
-.quemsomos, .areas, .contato {
+.quemsomos, .areas, .contato, .reviews {
    max-width: 1550px;
    margin: auto;
    padding-top: 80px;
@@ -362,9 +362,6 @@ header.sticky .logo img {
 /* ------------------ FINAL CSS QUEM SOMOS ------------------ */
 
 /* ------------------ INICIO CSS AREAS DE ATUAÇÃO ------------------ */
-.areas {
-   margin-bottom: 80px;
-}
 .areas .content {
    display: flex;
    justify-content: center;
@@ -501,6 +498,16 @@ header.sticky .logo img {
 }
 /* ------------------ FINAL CSS AREAS DE ATUAÇÃO ------------------ */
 
+.reviews {
+   position: relative;
+}
+.reviews .review-widget-fix {
+   position: absolute;
+   bottom: 44px;
+   width: 100%;
+   background-color: #FFF;
+   height: 30px;
+}
 /* ------------------ INICIO CSS CONTATO ------------------ */
 .social {
    display: flex;
@@ -557,7 +564,6 @@ header.sticky .logo img {
    z-index: 1;
    background-color: #1A2A39;
    padding: 33px;
-   justify-content: center;
    flex-direction: column;
    justify-content: space-between;
    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
@@ -712,8 +718,7 @@ header.sticky .logo img {
       box-shadow: none;
       width: calc(100% - 350px);
       margin-left: 0;
-      padding-left: 0;
-      padding: 0;
+      padding: 0 !important;
       height: 550px;
    }
 }
